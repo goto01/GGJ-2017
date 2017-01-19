@@ -64,7 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controllers\BaseController.cs" />
-    <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputCondition.cs" />
+    <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputItem.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\DemoScenes\DemoAssets\Orbit.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\Internal\PixelPerfect.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\Internal\PixelPerfectHSBColor.cs" />
