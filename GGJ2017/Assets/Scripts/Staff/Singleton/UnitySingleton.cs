@@ -37,7 +37,6 @@ namespace Assets.Scripts.Staff.Singleton
         public static void _Awake(T instance)
         {
             _globalInstanceCount++;
-            Debug.Log(_globalInstanceCount);
             Assert.IsTrue(_globalInstanceCount <= 1, "More than one instance of the " + _type.Name);
             Assert.AreNotEqual(instance, null);
             _instance = instance;

@@ -63,6 +63,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AudioToolkit\AudioToolkit\AudioController.cs" />
+    <Compile Include="Assets\AudioToolkit\AudioToolkit\AudioControllerHelper.cs" />
+    <Compile Include="Assets\AudioToolkit\AudioToolkit\AudioFader.cs" />
+    <Compile Include="Assets\AudioToolkit\AudioToolkit\AudioItem.cs" />
+    <Compile Include="Assets\AudioToolkit\AudioToolkit\AudioLog.cs" />
+    <Compile Include="Assets\AudioToolkit\AudioToolkit\AudioObject.cs" />
+    <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\ArrayHelper.cs" />
+    <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\FlashSupport.cs" />
+    <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\PoolableObject.cs" />
+    <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\RegisteredComponent.cs" />
+    <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\SystemTime.cs" />
+    <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\UnitySingleton.cs" />
     <Compile Include="Assets\Scripts\Controllers\BaseController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputCondition.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputController.cs" />
@@ -78,6 +90,7 @@
     <Compile Include="Assets\Scripts\Staff\Singleton\UnitySingleton.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AudioToolkit\Readme.txt" />
     <None Include="Assets\Scripts\PixelPerfect\README.txt" />
     <None Include="Assets\Scripts\PixelPerfect\Scripts\Internal\Resources\PixelPerfectShader.shader" />
   </ItemGroup>
