@@ -84,6 +84,12 @@
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\Internal\PixelPerfectObject.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\PixelPerfectCamera.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\PixelPerfectSprite.cs" />
+    <Compile Include="Assets\Scripts\Staff\Core\BindingMonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Staff\CustomEditor\CustomProperties\BindingProperty.cs" />
+    <Compile Include="Assets\Scripts\Staff\CustomEditor\EditorGUIExtended.cs" />
+    <Compile Include="Assets\Scripts\Staff\Helpers\FieldInfoExtended.cs" />
+    <Compile Include="Assets\Scripts\Staff\Helpers\GameObjectExtended.cs" />
+    <Compile Include="Assets\Scripts\Staff\Helpers\SystemTypeExtended.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\ISingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\UnitySingleton.cs" />
