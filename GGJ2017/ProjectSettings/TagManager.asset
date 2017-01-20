@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Game controller
+  - Main character
+  - Platform
+  - Fan
   layers:
   - Default
   - TransparentFX

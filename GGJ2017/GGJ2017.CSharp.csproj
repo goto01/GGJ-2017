@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\Components\Movement\BaseMovementObject.cs" />
     <Compile Include="Assets\Scripts\Components\Movement\MainCharacterMovement\DirectionDescription.cs" />
     <Compile Include="Assets\Scripts\Components\Movement\MainCharacterMovement\MainCharacterMovementObject.cs" />
+    <Compile Include="Assets\Scripts\Components\Presenters\BaseCharacterPresenter.cs" />
     <Compile Include="Assets\Scripts\Controllers\BaseController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputCondition.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputController.cs" />

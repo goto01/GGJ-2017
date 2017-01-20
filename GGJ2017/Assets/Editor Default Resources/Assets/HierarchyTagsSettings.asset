@@ -17,3 +17,9 @@ MonoBehaviour:
     Color: {r: 0.7941176, g: 0.2744377, b: 0.2744377, a: 1}
   - Name: MainCamera
     Color: {r: 0.2967128, g: 0.2967128, b: 0.8235294, a: 1}
+  - Name: Main character
+    Color: {r: 0.21599263, g: 0.625, b: 0.23573785, a: 1}
+  - Name: Platform
+    Color: {r: 0.7290128, g: 0.3300714, b: 0.8161765, a: 1}
+  - Name: Fan
+    Color: {r: 0.35142735, g: 0.77817374, b: 0.9191176, a: 1}

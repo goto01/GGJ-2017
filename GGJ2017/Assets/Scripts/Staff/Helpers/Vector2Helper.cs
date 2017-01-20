@@ -18,5 +18,12 @@ namespace Assets.Scripts.Staff.Helpers
             vector3.z = z;
             return vector3;
         }
+
+        public static Vector2 Abs(Vector2 vector)
+        {
+            vector[0] = Mathf.Abs(vector[0]);
+            vector[1] = Mathf.Abs(vector[1]);
+            return vector;
+        }
     }
 }

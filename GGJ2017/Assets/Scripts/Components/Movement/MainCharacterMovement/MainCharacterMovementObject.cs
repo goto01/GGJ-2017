@@ -7,25 +7,13 @@ namespace Assets.Scripts.Components.Movement.MainCharacterMovement
 {
     class MainCharacterMovementObject : BaseMovementObject
     {
-        private readonly int _horizontalAxis = Animator.StringToHash("Horizontal axis");
-        private readonly int _verticalAxis = Animator.StringToHash("Vertical axis");
-
         [SerializeField] private List<DirectionDescription> _descriptions;
         
-        protected override Vector3 Offset
-        {
-            get
-            {
-                return Speed * Direction;
-            }
-        }
-
-        private Vector2 Direction
+        public override Vector2 Direction
         {
             get
             {
                 var direction = GetInputDirection();
-                UpdateAnimator(direction);
                 return Vector2Helper.ClampVector(direction, -1, 1);
             }
         }
@@ -39,12 +27,6 @@ namespace Assets.Scripts.Components.Movement.MainCharacterMovement
                     direction += directionDescription.Direction;
             }
             return direction;
-        }
-
-        private void UpdateAnimator(Vector2 direction)
-        {
-            _animator.SetFloat(_horizontalAxis, direction.x);
-            _animator.SetFloat(_verticalAxis, direction.y);
         }
     }
 }
