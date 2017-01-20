@@ -113,6 +113,7 @@
     <Compile Include="Assets\Editor\Helpers\ObjectCreatorHelper.cs" />
     <Compile Include="Assets\Editor\Helpers\ReflectionHelper.cs" />
     <Compile Include="Assets\Editor\Scriptable objects\HierarchyTagsSettings.cs" />
+    <Compile Include="Assets\Editor\Scripts\CustomEditors\BindingMonoBehaviourEditor.cs" />
     <Compile Include="Assets\Editor\Scripts\HierarchyTags\HierarchyTags.cs" />
     <Compile Include="Assets\Editor\Scripts\HierarchyTags\HierarchyTagsManager.cs" />
     <Compile Include="Assets\Editor\Windows\BaseWindow.cs" />

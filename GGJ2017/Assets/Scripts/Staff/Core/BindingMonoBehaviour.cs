@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using Assets.Scripts.Staff.CustomEditor;
 using Assets.Scripts.Staff.CustomEditor.CustomProperties;
 using Assets.Scripts.Staff.Helpers;
 using Assets.Scripts.UnityExtended.Extended_methods;
@@ -100,44 +99,4 @@ namespace Assets.Scripts.Staff.Core
 
         #endregion
     }
-
-#if UNITY_EDITOR
-    [UnityEditor.CustomEditor(typeof(BindingMonoBehaviour), true)]
-    [CanEditMultipleObjects]
-    public class BindingMonoBehaviourEditor : Editor
-    {
-        #region Properties
-
-        private BindingMonoBehaviour Self { get { return target as BindingMonoBehaviour; } }
-
-        #endregion
-
-        #region Overrided methods
-
-        public override void OnInspectorGUI()
-        {
-            DrawCustomHeader();
-            DrawDefaultInspector();
-        }
-
-        #endregion
-
-        #region Draw inspector methods
-
-        protected virtual void DrawCustomHeader()
-        {
-            DrawReBindingEditor();
-        }
-
-        private void DrawReBindingEditor()
-        {
-            EditorGUIExtended.DrawButtonsInLine(EditorGUILayout.GetControlRect(),
-                new[] { "rebinding", "drop binding" },
-                new[] { Color.white, Color.white, },
-                new[] { (Action)(() => Self.ReBindingFields()), (() => { Self.DropBindingOfFields(); }) });
-        }
-
-        #endregion
-    }
-#endif
 }
