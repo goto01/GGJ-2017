@@ -1,8 +1,9 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace Assets.Scripts.Editor.Helpers
+namespace Assets.Scripts.Staff.Helpers
 {
     public class ObjectCreatorHelper
     {
@@ -14,3 +15,4 @@ namespace Assets.Scripts.Editor.Helpers
         }
     }
 }
+#endif

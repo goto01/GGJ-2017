@@ -110,14 +110,10 @@
     <Compile Include="Assets\AudioToolkit\AudioToolkit\Editor\AudioLogView.cs" />
     <Compile Include="Assets\AudioToolkit\AudioToolkit\Editor\AudioObject_Editor.cs" />
     <Compile Include="Assets\AudioToolkit\AudioToolkit\Editor\AudioUtility.cs" />
-    <Compile Include="Assets\Editor\Helpers\ObjectCreatorHelper.cs" />
-    <Compile Include="Assets\Editor\Helpers\ReflectionHelper.cs" />
     <Compile Include="Assets\Editor\Scriptable objects\HierarchyTagsSettings.cs" />
     <Compile Include="Assets\Editor\Scripts\CustomEditors\BindingMonoBehaviourEditor.cs" />
     <Compile Include="Assets\Editor\Scripts\HierarchyTags\HierarchyTags.cs" />
     <Compile Include="Assets\Editor\Scripts\HierarchyTags\HierarchyTagsManager.cs" />
-    <Compile Include="Assets\Editor\Windows\BaseWindow.cs" />
-    <Compile Include="Assets\Editor\Windows\ScriptableObjectCreatorWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AudioToolkit\Readme.txt" />

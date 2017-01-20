@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Assets.Editor.Scriptable_objects;
-using Assets.Editor.Windows;
+using Assets.Scripts.Staff.Windows;
 using UnityEditor;
 using UnityEngine;
 

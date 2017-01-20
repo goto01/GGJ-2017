@@ -1,7 +1,8 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
 using UnityEngine;
+using UnityEditor;
 
-namespace Assets.Editor.Windows
+namespace Assets.Scripts.Staff.Windows
 {
     public abstract class BaseWindow<T> : EditorWindow
         where T : BaseWindow<T>
@@ -19,3 +20,4 @@ namespace Assets.Editor.Windows
         protected abstract void OnGUI();
     }
 }
+#endif

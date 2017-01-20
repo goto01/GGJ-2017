@@ -6,8 +6,9 @@ TagManager:
   tags:
   - Game controller
   - Main character
-  - Platform
+  - Stage
   - Fan
+  - Crowd
   layers:
   - Default
   - TransparentFX
@@ -17,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Main character
+  - Stage
+  - Crowd
   - 
   - 
   - 

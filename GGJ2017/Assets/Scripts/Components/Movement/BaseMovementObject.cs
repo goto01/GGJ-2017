@@ -11,10 +11,17 @@ namespace Assets.Scripts.Components.Movement
         [SerializeField] [Range(1, 5f)] private float _speed;
         [SerializeField] private Vector3 _position;
         [SerializeField] [Range(0, 1)] private float _diagonalDelta = 1;
+        [SerializeField] [Range(0, 1)] private float _slowDownDelta = 1;
 
-        protected virtual float Speed { get { return _speed*Time.deltaTime; } }
+        protected virtual float Speed { get { return _speed*_slowDownDelta*Time.deltaTime; } }
 
         public abstract Vector2 Direction { get; }
+
+        public float SlowdownDelta
+        {
+            get { return _slowDownDelta; }
+            set { _slowDownDelta = value; }
+        }
 
         protected Vector3 Offset { get { return Speed*GetHandledDirection(Direction); } }
 

@@ -85,6 +85,84 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &119331191
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1859181631}
+    m_Modifications:
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489922, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11446000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11422906, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11442142, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11454448, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11453600, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_Name
+      value: Fan biom (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &119331192 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_PrefabInternal: {fileID: 119331191}
 --- !u!1001 &177598590
 Prefab:
   m_ObjectHideFlags: 0
@@ -151,6 +229,10 @@ Prefab:
     - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
       propertyPath: m_Name
       value: Fan biom (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
@@ -226,9 +308,141 @@ Prefab:
       propertyPath: m_Name
       value: Fan biom (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &281652349
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1824444386}
+    m_Modifications:
+    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11449644, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 194596, guid: 566a94cfece314c468061903c0326b49, type: 2}
+      propertyPath: m_Name
+      value: Stage 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 566a94cfece314c468061903c0326b49, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &315240846
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1859181631}
+    m_Modifications:
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489922, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11446000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11422906, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11442142, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11454448, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11453600, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_Name
+      value: Fan biom (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &315240847 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_PrefabInternal: {fileID: 315240846}
 --- !u!4 &334104548 stripped
 Transform:
   m_PrefabParentObject: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
@@ -255,7 +469,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 338752914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -403,54 +617,12 @@ Prefab:
       propertyPath: m_Name
       value: Fan biom (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &499155926
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1824444386}
-    m_Modifications:
-    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11449644, guid: 566a94cfece314c468061903c0326b49, type: 2}
-      propertyPath: pixelPerfectCamera
-      value: 
-      objectReference: {fileID: 1993151061}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 566a94cfece314c468061903c0326b49, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &514582701 stripped
 Transform:
@@ -569,6 +741,10 @@ Prefab:
       propertyPath: m_Name
       value: Fan biom (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
   m_IsPrefabParent: 0
@@ -647,9 +823,91 @@ Prefab:
       propertyPath: m_Name
       value: Fan biom (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &832008461
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1859181631}
+    m_Modifications:
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489922, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11446000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11422906, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11442142, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11454448, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11453600, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_Name
+      value: Fan biom (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &832008462 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_PrefabInternal: {fileID: 832008461}
 --- !u!1001 &980704914
 Prefab:
   m_ObjectHideFlags: 0
@@ -717,6 +975,10 @@ Prefab:
       propertyPath: m_Name
       value: Fan biom (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
   m_IsPrefabParent: 0
@@ -728,6 +990,84 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
   m_PrefabInternal: {fileID: 177598590}
+--- !u!1001 &1352778025
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1859181631}
+    m_Modifications:
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489922, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11446000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11422906, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11442142, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11454448, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11453600, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_Name
+      value: Fan biom (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1352778026 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_PrefabInternal: {fileID: 1352778025}
 --- !u!1001 &1419734151
 Prefab:
   m_ObjectHideFlags: 0
@@ -795,9 +1135,91 @@ Prefab:
       propertyPath: m_Name
       value: Fan biom (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1480780498
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1859181631}
+    m_Modifications:
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489922, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11446000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11422906, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11442142, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11454448, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11453600, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_Name
+      value: Fan biom (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1480780499 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_PrefabInternal: {fileID: 1480780498}
 --- !u!4 &1506652462 stripped
 Transform:
   m_PrefabParentObject: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
@@ -869,13 +1291,17 @@ Prefab:
       propertyPath: m_Name
       value: Fan biom (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1660323725 stripped
 Transform:
   m_PrefabParentObject: {fileID: 445714, guid: 566a94cfece314c468061903c0326b49, type: 2}
-  m_PrefabInternal: {fileID: 499155926}
+  m_PrefabInternal: {fileID: 281652349}
 --- !u!1 &1824444385
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,7 +1311,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1824444386}
   m_Layer: 0
-  m_Name: '[Platform]'
+  m_Name: '[Stage]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -941,6 +1367,12 @@ Transform:
   - {fileID: 225836269}
   - {fileID: 779198201}
   - {fileID: 363841656}
+  - {fileID: 1480780499}
+  - {fileID: 1352778026}
+  - {fileID: 832008462}
+  - {fileID: 315240847}
+  - {fileID: 2147414710}
+  - {fileID: 119331192}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!1001 &1898733674
@@ -1010,9 +1442,29 @@ Prefab:
       propertyPath: m_Name
       value: Fan biom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1987522634 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 104932, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+  m_PrefabInternal: {fileID: 560371886}
+--- !u!114 &1987522635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1987522634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dd7a6b6c1f9a7429b9e223bc7731a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cameraScale: 2
 --- !u!1 &1993151055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,9 +1524,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 53.416225
+  field of view: 65.28928
   orthographic: 1
-  orthographic size: 5.03125
+  orthographic size: 6.40625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1107,20 +1559,20 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1993151055}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e9c55f9e2e4bf845a8f21eda023f561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fitType: 0
-  targetPixelHeight: 600
+  targetPixelHeight: 410
   parallaxLayerCount: 10
   cameraZoom: 1
   pixelatedPostProcessing: 0
-  heightError: 278
+  heightError: 0
   showGizmos: 0
   subpixelOffset: {x: 0, y: 0}
-  pixelZoomMode: 1
+  pixelZoomMode: 0
 --- !u!1001 &2007057336
 Prefab:
   m_ObjectHideFlags: 0
@@ -1167,3 +1619,81 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2501a81c39080ae4e9d7c86b875c65ee, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &2147414709
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1859181631}
+    m_Modifications:
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489922, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11446000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11422906, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11442142, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11454448, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 11453600, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: pixelPerfectCamera
+      value: 
+      objectReference: {fileID: 1993151061}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_Name
+      value: Fan biom (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 175340, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+      propertyPath: m_TagString
+      value: Fan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2147414710 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 426298, guid: 3f44d062e5f885440b4885417cd10814, type: 2}
+  m_PrefabInternal: {fileID: 2147414709}

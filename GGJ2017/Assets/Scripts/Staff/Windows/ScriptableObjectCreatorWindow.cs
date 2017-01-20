@@ -1,14 +1,15 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Editor.Helpers;
-using Assets.Scripts.Editor.Helpers;
+using Assets.Scripts.Staff.Helpers;
 using UnityEditor;
 using UnityEngine;
 
-namespace Assets.Editor.Windows
+namespace Assets.Scripts.Staff.Windows
 {
-    class ScriptableObjectCreatorWindow : BaseWindow<ScriptableObjectCreatorWindow>
+    public class ScriptableObjectCreatorWindow : BaseWindow<ScriptableObjectCreatorWindow>
     {
         private IEnumerable<Type> _types;
         private IList<GUIContent> _contents;
@@ -62,3 +63,4 @@ namespace Assets.Editor.Windows
         }
     }
 }
+#endif

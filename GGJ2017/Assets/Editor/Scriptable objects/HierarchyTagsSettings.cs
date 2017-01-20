@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Assets.Editor.Windows;
+using Assets.Scripts.Staff.Windows;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions;
