@@ -85,6 +85,104 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &338752914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 338752915}
+  m_Layer: 0
+  m_Name: '[MainCharacters]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &338752915
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338752914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3002293, y: 0.31362182, z: -0.17578125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 727714752}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!1 &727714751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 727714752}
+  - 114: {fileID: 727714754}
+  - 95: {fileID: 727714753}
+  m_Layer: 0
+  m_Name: MainCharacter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &727714752
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 727714751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 338752915}
+  m_RootOrder: 0
+--- !u!95 &727714753
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 727714751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &727714754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 727714751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b0bca950d596a342b918084c6386b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 727714753}
+  _speed: 0.5
+  _descriptions:
+  - Direction: {x: -1, y: 0}
+    InputName: Left
+  - Direction: {x: 1, y: 0}
+    InputName: Right
+  - Direction: {x: 0, y: 1}
+    InputName: Up
+  - Direction: {x: 0, y: -1}
+    InputName: Down
 --- !u!1 &1987522634
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,15 +214,41 @@ MonoBehaviour:
   _inputItems:
   - Name: Left
     Conditions:
-    - _inputName: Left keyboard button
-      _inputType: 0
-      _axisCondition: 0
-      _axisConditionParameter: 0
     - _inputName: Gamepad axis Dpad Horizontal
       _inputType: 1
       _axisCondition: 0
       _axisConditionParameter: 0
     - _inputName: A keyboard button
+      _inputType: 0
+      _axisCondition: 0
+      _axisConditionParameter: 0
+  - Name: Right
+    Conditions:
+    - _inputName: Gamepad axis Dpad Horizontal
+      _inputType: 1
+      _axisCondition: 1
+      _axisConditionParameter: 0
+    - _inputName: D keyboard button
+      _inputType: 0
+      _axisCondition: 0
+      _axisConditionParameter: 0
+  - Name: Down
+    Conditions:
+    - _inputName: Gamepad axis Dpad Vertical
+      _inputType: 1
+      _axisCondition: 0
+      _axisConditionParameter: 0
+    - _inputName: S keyboard button
+      _inputType: 0
+      _axisCondition: 0
+      _axisConditionParameter: 0
+  - Name: Up
+    Conditions:
+    - _inputName: Gamepad axis Dpad Vertical
+      _inputType: 1
+      _axisCondition: 1
+      _axisConditionParameter: 0
+    - _inputName: W keyboard button
       _inputType: 0
       _axisCondition: 0
       _axisConditionParameter: 0
@@ -152,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1669b0a062dc66842ab1bca41a93ebe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioObjectPrefab: {fileID: 0}
+  AudioObjectPrefab: {fileID: 188888, guid: 602a7a8c8c964a447bfa95cf2a238a76, type: 2}
   Persistent: 0
   UnloadAudioClipsOnDestroy: 0
   UsePooledAudioObjects: 1

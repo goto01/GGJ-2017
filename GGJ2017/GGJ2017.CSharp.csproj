@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.5f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -75,6 +77,9 @@
     <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\RegisteredComponent.cs" />
     <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\SystemTime.cs" />
     <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\UnitySingleton.cs" />
+    <Compile Include="Assets\Scripts\Components\Movement\BaseMovementObject.cs" />
+    <Compile Include="Assets\Scripts\Components\Movement\MainCharacterMovement\DirectionDescription.cs" />
+    <Compile Include="Assets\Scripts\Components\Movement\MainCharacterMovement\MainCharacterMovementObject.cs" />
     <Compile Include="Assets\Scripts\Controllers\BaseController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputCondition.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputController.cs" />
@@ -90,6 +95,7 @@
     <Compile Include="Assets\Scripts\Staff\Helpers\FieldInfoExtended.cs" />
     <Compile Include="Assets\Scripts\Staff\Helpers\GameObjectExtended.cs" />
     <Compile Include="Assets\Scripts\Staff\Helpers\SystemTypeExtended.cs" />
+    <Compile Include="Assets\Scripts\Staff\Helpers\Vector2Helper.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\ISingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\UnitySingleton.cs" />
