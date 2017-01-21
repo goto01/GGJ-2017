@@ -104,6 +104,7 @@
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputCondition.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputItem.cs" />
+    <Compile Include="Assets\Scripts\Controllers\ZPositionSortController.cs" />
     <Compile Include="Assets\Scripts\DisplayFPS.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\Internal\PixelPerfect.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\Internal\PixelPerfectHSBColor.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="Assets\Scripts\Staff\Helpers\Vector2Helper.cs" />
     <Compile Include="Assets\Scripts\Staff\Pool\PoolObject.cs" />
     <Compile Include="Assets\Scripts\Staff\Pool\PortablePool.cs" />
+    <Compile Include="Assets\Scripts\Staff\GoodPopupSpawner.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\ISingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\UnitySingleton.cs" />
@@ -144,5 +146,6 @@
     <None Include="Assets\Shaders\Simple wave shader.shader" />
     <None Include="Assets\Shaders\Sprite simple shader.shader" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

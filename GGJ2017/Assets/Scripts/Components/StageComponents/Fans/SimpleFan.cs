@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Staff;
+﻿using Assets.Scripts.Components.Movement.MainCharacterMovement;
+using Assets.Scripts.Staff;
 using Assets.Scripts.Staff.Core;
 using Assets.Scripts.Staff.CustomEditor.CustomProperties;
 using Assets.Scripts.Staff.Pool;
@@ -15,6 +16,7 @@ namespace Assets.Scripts.Components.StageComponents.Fans
         [SerializeField] [Binding(true)] private Animator _animator;
         [SerializeField] private BaseSpawner _starSpawner;
         [SerializeField] private bool _active;
+        private bool _popUpSpawned;
 
         private bool Active
         {
@@ -26,17 +28,37 @@ namespace Assets.Scripts.Components.StageComponents.Fans
             }
         }
 
+        protected virtual void Update()
+        {
+            //PopupSpawner.Instance.Spawner.Spawn(transform.position);
+        }
+
+        protected virtual void OnTriggerEnter2D(Collider2D coll)
+        {
+            if (_active && !_popUpSpawned && coll.tag.Equals(MainCharacterMovementObject.Tag))
+            {
+                GoodPopupSpawner.Instance.Spawner.Spawn(transform.position + new Vector3(0, 0.03125f * 50));
+                _popUpSpawned = true;
+                Call(() => _popUpSpawned = false, 5);
+            }
+        }
+
         public void Activate()
         {
             if (Active) return;
             Active = true;
-            StarsSpawner.Instance.Spawner.Spawn(transform.position);
+            GoodPopupSpawner.Instance.Spawner.Spawn(transform.position+new Vector3(0, 0.03125f*50));
             StarsSpawner.Instance.Spawner.Spawn(transform.position);
         }
 
         public void Deactivate()
         {
             Active = false;
+        }
+
+        private void SpawnPopUp()
+        {
+            //if (Random.)
         }
     }
 }

@@ -29,7 +29,7 @@ namespace Assets.Scripts.Components.Presenters
         private void UpdateScale(Vector2 direction)
         {
             var scale = transform.localScale;
-            scale.x = -1*Mathf.Sign(direction.x);
+            if (direction.x != 0) scale.x = -1*Mathf.Sign(direction.x);
             transform.localScale = scale;
         }
     }

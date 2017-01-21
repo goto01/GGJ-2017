@@ -1,6 +1,8 @@
 ﻿using Assets.Scripts.Components.StageComponents.StageAreas;
+using Assets.Scripts.Controllers;
 using Assets.Scripts.Staff.Core;
 using UnityEngine;
+using Object = System.Object;
 
 namespace Assets.Scripts.Components.StageComponents
 {
@@ -9,12 +11,13 @@ namespace Assets.Scripts.Components.StageComponents
         [SerializeField] private SimpleStageArea _stageArea;
         [SerializeField] private int _rows;
         [SerializeField] private int _columns;
-        [SerializeField] private GameObject[] _fans;
+        [SerializeField] private UnityEngine.Object[] _fans;
         [SerializeField] private Transform _parent;
         [SerializeField] private float _topMargin;
         [SerializeField] private float _leftMargin;
         [SerializeField] private float _rightMargin;
         [SerializeField] private float _botMargin;
+        [SerializeField] private ZPositionSortController _positionSortController;
 
         private int FanCount { get { return _fans.Length; } }
         
@@ -31,8 +34,9 @@ namespace Assets.Scripts.Components.StageComponents
             for (var row=0;row < _rows; row++)
                 for (var column=0; column < _columns; column++)
                 {
-                    var position = GetCellPosition(row, column);
+                    Vector3 position = GetCellPosition(row, column);
                     var go = GetFan();
+                    position.z = _positionSortController.GetZCoord(position);
                     go.transform.position = position;
                     go.transform.parent = _parent;
                 }
@@ -65,7 +69,7 @@ namespace Assets.Scripts.Components.StageComponents
 
         private GameObject GetFan()
         {
-            return Instantiate(_fans[Random.Range(0, FanCount)]);
+            return Instantiate(_fans[Random.Range(0, FanCount)]) as GameObject;
         }
     }
 }

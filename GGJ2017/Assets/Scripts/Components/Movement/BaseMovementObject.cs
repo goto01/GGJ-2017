@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Staff.Core;
+﻿using Assets.Scripts.Controllers;
+using Assets.Scripts.Staff.Core;
 using Assets.Scripts.Staff.CustomEditor.CustomProperties;
 using Assets.Scripts.Staff.Helpers;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace Assets.Scripts.Components.Movement
     {
         [Space]
         [SerializeField] [Range(1, 5f)] private float _speed;
-        [SerializeField] private Vector3 _position;
+        [SerializeField] protected Vector3 _position;
         [SerializeField] [Range(0, 1)] private float _diagonalDelta = 1;
         [SerializeField] [Range(0, 1)] private float _slowDownDelta = 1;
 
@@ -51,7 +52,13 @@ namespace Assets.Scripts.Components.Movement
 
         protected virtual void UpdatePosition()
         {
+            UpdateZPosition();
             Position += Offset;
+        }
+
+        protected virtual void UpdateZPosition()
+        {
+            _position.z = ZPositionSortController.Instance.GetZCoord(_position);
         }
 
         private Vector2 GetHandledDirection(Vector2 direction)

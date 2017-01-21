@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace Assets.Scripts.Staff.Spawners
 {
-    public abstract class BaseSpawner : MonoBehaviour
+    public class BaseSpawner : MonoBehaviour
     {
         [SerializeField] protected PortablePool _pool;
         [SerializeField] private float _spawnDelay;
         [SerializeField] private bool _isSpawnDefault;
 
-        abstract protected Vector2 Position { get; }
+        protected virtual Vector2 Position { get {return Vector2.zero;} }
 
         #region Unity events
 
