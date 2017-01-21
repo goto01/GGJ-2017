@@ -1,5 +1,7 @@
 ﻿using Assets.Scripts.Staff.Core;
 using Assets.Scripts.Staff.CustomEditor.CustomProperties;
+using Assets.Scripts.Staff.Pool;
+using Assets.Scripts.Staff.Spawners;
 using UnityEngine;
 
 namespace Assets.Scripts.Components.StageComponents.Fans
@@ -10,6 +12,7 @@ namespace Assets.Scripts.Components.StageComponents.Fans
         private readonly int _activeParameter = Animator.StringToHash("Active");
 
         [SerializeField] [Binding(true)] private Animator _animator;
+        [SerializeField] private BaseSpawner _starSpawner;
         [SerializeField] private bool _active;
 
         private bool Active
@@ -24,7 +27,10 @@ namespace Assets.Scripts.Components.StageComponents.Fans
 
         public void Activate()
         {
+            if (Active) return;
             Active = true;
+            _starSpawner.Spawn(transform.position);
+            _starSpawner.Spawn(transform.position);
         }
 
         public void Deactivate()

@@ -19,5 +19,20 @@ namespace Assets.Scripts.Controllers.InputControllerSystem
         {
             return _inputItemsDictionary[inputName].IsActive;
         }
+
+        public bool IsFire()
+        {
+            return Input.GetButtonDown("Gamepad button R1") || (Input.GetKeyDown(KeyCode.Space));
+        }
+
+        public Vector2 GetMousePosition()
+        {
+            return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
+
+        public Vector2 GetDir()
+        {
+            return new Vector2(Input.GetAxis("Gamepad axis R Horizontal"), -Input.GetAxis("Gamepad axis R Vertical")).normalized;
+        }
     }
 }

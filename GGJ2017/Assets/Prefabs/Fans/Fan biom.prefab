@@ -430,6 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 9584538}
+  _starSpawner: {fileID: 0}
   _active: 0
 --- !u!114 &11411172
 MonoBehaviour:
@@ -443,6 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 9506678}
+  _starSpawner: {fileID: 0}
   _active: 0
 --- !u!114 &11417516
 MonoBehaviour:
@@ -456,6 +458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 9552298}
+  _starSpawner: {fileID: 0}
   _active: 0
 --- !u!114 &11422906
 MonoBehaviour:
@@ -487,6 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 9534072}
+  _starSpawner: {fileID: 0}
   _active: 0
 --- !u!114 &11436048
 MonoBehaviour:
@@ -500,6 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 9509934}
+  _starSpawner: {fileID: 0}
   _active: 0
 --- !u!114 &11438638
 MonoBehaviour:
@@ -513,6 +518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 9599196}
+  _starSpawner: {fileID: 0}
   _active: 0
 --- !u!114 &11442142
 MonoBehaviour:

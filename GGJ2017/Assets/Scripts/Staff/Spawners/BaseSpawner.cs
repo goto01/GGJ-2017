@@ -6,8 +6,9 @@ namespace Assets.Scripts.Staff.Spawners
 {
     public abstract class BaseSpawner : MonoBehaviour
     {
-        [SerializeField] private PortablePool _pool;
+        [SerializeField] protected PortablePool _pool;
         [SerializeField] private float _spawnDelay;
+        [SerializeField] private bool _isSpawnDefault;
 
         abstract protected Vector2 Position { get; }
 
@@ -15,10 +16,17 @@ namespace Assets.Scripts.Staff.Spawners
 
         protected virtual void Start()
         {
-            StartCoroutine(StartSpawningCoroutine());
+            if (_isSpawnDefault) StartCoroutine(StartSpawningCoroutine());
         }
 
         #endregion
+
+        public virtual void Spawn(Vector3 position)
+        {
+            var @object = _pool.PopObject();
+            position.z = @object.transform.position.z;
+            @object.transform.position = position;
+        }
 
         private IEnumerator StartSpawningCoroutine()
         {

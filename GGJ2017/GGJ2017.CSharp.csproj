@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.5f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -85,6 +87,7 @@
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\ReactableStageComponent.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\AnimatorParameterReaction.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\BaseReaction.cs" />
+    <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\OffsetObjectReaction.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\SlowdownReaction.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Stage.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\StageAreas\AggregatorArea.cs" />
@@ -92,6 +95,8 @@
     <Compile Include="Assets\Scripts\Components\StageComponents\StageAreas\SimpleStageArea.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Waves\BaseWave.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Waves\SimpleWave.cs" />
+    <Compile Include="Assets\Scripts\Components\StageComponents\Waves\StreightWave.cs" />
+    <Compile Include="Assets\Scripts\Components\StageComponents\Waves\WaveItems\StreightWaveItem.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Waves\WaveItems\WaveItem.cs" />
     <Compile Include="Assets\Scripts\Controllers\BaseController.cs" />
     <Compile Include="Assets\Scripts\Controllers\CameraSizeController.cs" />

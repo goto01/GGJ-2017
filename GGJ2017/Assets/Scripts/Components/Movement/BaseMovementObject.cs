@@ -25,7 +25,7 @@ namespace Assets.Scripts.Components.Movement
 
         protected Vector3 Offset { get { return Speed*GetHandledDirection(Direction); } }
 
-        protected Vector3 Position
+        public Vector3 Position
         {
             get { return _position; }
             set

@@ -1,9 +1,10 @@
 ﻿using Assets.Scripts.Components.StageComponents.Fans;
+using Assets.Scripts.Staff.Core;
 using UnityEngine;
 
 namespace Assets.Scripts.Components.StageComponents.Waves.WaveItems
 {
-    class WaveItem : MonoBehaviour
+    class WaveItem : BindingMonoBehaviour
     {
         protected virtual void OnTriggerEnter2D(Collider2D coll)
         {
