@@ -61,14 +61,14 @@
 			}
 
 			sampler2D _MainTex;
-			fixed4 _BlakWhiteDelta;
+			fixed _BlakWhiteDelta;
 			
 			fixed4 GetBlackWhite(fixed4 color, fixed blackWhiteDelta)
 			{
-				//if (blackWhiteDelta == 0) return color;
+				if (blackWhiteDelta == 0) return color;
 				fixed value = (color.r + color.g + color.b)/3;
-				color.rgb = lerp(fixed3(value, value, value), color.rgb, blackWhiteDelta);
-				//color.rgb = fixed3(.1, .1, .1);
+				color.rgb = lerp(color.rgb, fixed3(value, value, value), blackWhiteDelta);
+				color.rgb *= lerp(1, .5, blackWhiteDelta);
 				return color;
 			}
 			

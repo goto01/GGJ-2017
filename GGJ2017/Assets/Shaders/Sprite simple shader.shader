@@ -65,7 +65,7 @@
 			
 			fixed4 frag(v2f IN) : SV_Target
 			{
-				fixed4 c = tex2D(_RenderTexture, IN.texcoord) * IN.color;
+				fixed4 c = tex2D(_RenderTexture, IN.texcoord);
 				c.rgb *= c.a;
 				return c;
 			}

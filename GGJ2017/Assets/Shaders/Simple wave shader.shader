@@ -73,7 +73,7 @@
 				fixed d = tex2D(_Graycale, IN.texcoord).r;
 				if (d > _GrayScaleDelta0) c.a = 0;
 				if (d < _GrayScaleDelta1) c.a = 0;
-				c.a = min((d-_GrayScaleDelta1), c.a);
+				//c.a = min((d-_GrayScaleDelta1), c.a);
 				c.rgb *= c.a;
 				return c;
 			}

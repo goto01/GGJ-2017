@@ -148,11 +148,11 @@ Material:
       data:
         first:
           name: _GrayScaleDelta0
-        second: 0.589
+        second: 1
       data:
         first:
           name: _GrayScaleDelta1
-        second: 1
+        second: 0.288
     m_Colors:
       data:
         first:

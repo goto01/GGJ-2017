@@ -9,6 +9,7 @@ TagManager:
   - Stage
   - Fan
   - Crowd
+  - Wave
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Stage
   - Crowd
   - Wave
-  - 
+  - Fan
   - 
   - 
   - 
