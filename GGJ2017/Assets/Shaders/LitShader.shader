@@ -1,4 +1,4 @@
-﻿Shader "Sustom sprites/LitShader"
+﻿Shader "Custom sprites/LitShader"
 {
 	Properties
 	{

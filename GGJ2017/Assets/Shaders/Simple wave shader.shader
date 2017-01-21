@@ -1,10 +1,12 @@
-﻿Shader "Custom sprites/BlackWhiteShader"
+﻿Shader "Waves/SimpleWaveShader"
 {
 	Properties
 	{
 		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
 		_Color ("Tint", Color) = (1,1,1,1)
-		_BlakWhiteDelta ("Black white delta", range(0, 1)) = 1
+		_Graycale ("GrayScale", 2D) = "white" {}
+		_GrayScaleDelta0 ("GrayScale delta 0", range(0, 1)) = 1
+		_GrayScaleDelta1 ("GrayScale delta 1", range(0, 1)) = 1
 	}
 
 	SubShader
@@ -61,21 +63,17 @@
 			}
 
 			sampler2D _MainTex;
-			fixed4 _BlakWhiteDelta;
-			
-			fixed4 GetBlackWhite(fixed4 color, fixed blackWhiteDelta)
-			{
-				//if (blackWhiteDelta == 0) return color;
-				fixed value = (color.r + color.g + color.b)/3;
-				color.rgb = lerp(fixed3(value, value, value), color.rgb, blackWhiteDelta);
-				//color.rgb = fixed3(.1, .1, .1);
-				return color;
-			}
+			sampler2D _Graycale;
+			fixed _GrayScaleDelta0;
+			fixed _GrayScaleDelta1;
 			
 			fixed4 frag(v2f IN) : SV_Target
 			{
 				fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
-				c = GetBlackWhite(c, _BlakWhiteDelta);
+				fixed d = tex2D(_Graycale, IN.texcoord).r;
+				if (d > _GrayScaleDelta0) c.a = 0;
+				if (d < _GrayScaleDelta1) c.a = 0;
+				c.a = min((d-_GrayScaleDelta1), c.a);
 				c.rgb *= c.a;
 				return c;
 			}

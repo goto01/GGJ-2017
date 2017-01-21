@@ -1,10 +1,10 @@
-﻿Shader "Custom sprites/BlackWhiteShader"
+﻿Shader "Custom sprites/Sprite simple shader"
 {
 	Properties
 	{
 		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
 		_Color ("Tint", Color) = (1,1,1,1)
-		_BlakWhiteDelta ("Black white delta", range(0, 1)) = 1
+		_RenderTexture ("Render texture", 2D) = "white" {}
 	}
 
 	SubShader
@@ -61,21 +61,11 @@
 			}
 
 			sampler2D _MainTex;
-			fixed4 _BlakWhiteDelta;
-			
-			fixed4 GetBlackWhite(fixed4 color, fixed blackWhiteDelta)
-			{
-				//if (blackWhiteDelta == 0) return color;
-				fixed value = (color.r + color.g + color.b)/3;
-				color.rgb = lerp(fixed3(value, value, value), color.rgb, blackWhiteDelta);
-				//color.rgb = fixed3(.1, .1, .1);
-				return color;
-			}
+			sampler2D _RenderTexture;
 			
 			fixed4 frag(v2f IN) : SV_Target
 			{
-				fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
-				c = GetBlackWhite(c, _BlakWhiteDelta);
+				fixed4 c = tex2D(_RenderTexture, IN.texcoord) * IN.color;
 				c.rgb *= c.a;
 				return c;
 			}
