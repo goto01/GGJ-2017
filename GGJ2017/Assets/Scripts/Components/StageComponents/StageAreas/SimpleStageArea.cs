@@ -10,7 +10,8 @@ namespace Assets.Scripts.Components.StageComponents.StageAreas
         [SerializeField] private float _height;
 
         private Vector2 Center { get { return new Vector2(_x + _width / 2, _y + _height / 2); } }
-        private Vector2 Size { get { return new Vector2(_width, _height); } }
+        public Vector2 Position { get { return new Vector2(_x, _y);} }
+        public Vector2 Size { get { return new Vector2(_width, _height); } }
 
 #if UNITY_EDITOR
 

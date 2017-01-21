@@ -29,8 +29,6 @@ namespace Assets.Scripts.Components.StageComponents.Fans
         {
             if (Active) return;
             Active = true;
-            _starSpawner.Spawn(transform.position);
-            _starSpawner.Spawn(transform.position);
         }
 
         public void Deactivate()
