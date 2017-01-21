@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Components\Movement\MainCharacterMovement\MainCharacterMovementObject.cs" />
     <Compile Include="Assets\Scripts\Components\Presenters\BaseCharacterPresenter.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\CharacterStageComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\StageComponents\CroudGenerator.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Crowd.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Fans\SimpleFan.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\ReactableStageComponent.cs" />
