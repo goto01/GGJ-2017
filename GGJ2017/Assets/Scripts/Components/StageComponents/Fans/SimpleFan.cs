@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Staff.Core;
+﻿using Assets.Scripts.Staff;
+using Assets.Scripts.Staff.Core;
 using Assets.Scripts.Staff.CustomEditor.CustomProperties;
 using Assets.Scripts.Staff.Pool;
 using Assets.Scripts.Staff.Spawners;
@@ -29,6 +30,8 @@ namespace Assets.Scripts.Components.StageComponents.Fans
         {
             if (Active) return;
             Active = true;
+            StarsSpawner.Instance.Spawner.Spawn(transform.position);
+            StarsSpawner.Instance.Spawner.Spawn(transform.position);
         }
 
         public void Deactivate()

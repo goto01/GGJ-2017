@@ -129,6 +129,7 @@
     <Compile Include="Assets\Scripts\Staff\Spawners\BaseSpawner.cs" />
     <Compile Include="Assets\Scripts\Staff\Spawners\FollowingSpawner.cs" />
     <Compile Include="Assets\Scripts\Staff\Spawners\RandomAreaFollowingSpawner.cs" />
+    <Compile Include="Assets\Scripts\Staff\StarsSpawner.cs" />
     <Compile Include="Assets\Scripts\Staff\TailComponent.cs" />
     <Compile Include="Assets\Scripts\Staff\Windows\BaseWindow.cs" />
     <Compile Include="Assets\Scripts\Staff\Windows\ScriptableObjectCreatorWindow.cs" />
