@@ -96,12 +96,14 @@
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputCondition.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputControllerSystem\InputItem.cs" />
+    <Compile Include="Assets\Scripts\DisplayFPS.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\Internal\PixelPerfect.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\Internal\PixelPerfectHSBColor.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\Internal\PixelPerfectObject.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\PixelPerfectCamera.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\PixelPerfectSprite.cs" />
     <Compile Include="Assets\Scripts\Staff\Core\BindingMonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Staff\Core\OWCTransform.cs" />
     <Compile Include="Assets\Scripts\Staff\CustomEditor\CustomProperties\BindingProperty.cs" />
     <Compile Include="Assets\Scripts\Staff\CustomEditor\EditorGUIExtended.cs" />
     <Compile Include="Assets\Scripts\Staff\Helpers\FieldInfoExtended.cs" />
@@ -115,6 +117,10 @@
     <Compile Include="Assets\Scripts\Staff\Singleton\ISingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\UnitySingleton.cs" />
+    <Compile Include="Assets\Scripts\Staff\Spawners\BaseSpawner.cs" />
+    <Compile Include="Assets\Scripts\Staff\Spawners\FollowingSpawner.cs" />
+    <Compile Include="Assets\Scripts\Staff\Spawners\RandomAreaFollowingSpawner.cs" />
+    <Compile Include="Assets\Scripts\Staff\TailComponent.cs" />
     <Compile Include="Assets\Scripts\Staff\Windows\BaseWindow.cs" />
     <Compile Include="Assets\Scripts\Staff\Windows\ScriptableObjectCreatorWindow.cs" />
   </ItemGroup>
@@ -122,6 +128,8 @@
     <None Include="Assets\AudioToolkit\Readme.txt" />
     <None Include="Assets\Scripts\PixelPerfect\README.txt" />
     <None Include="Assets\Scripts\PixelPerfect\Scripts\Internal\Resources\PixelPerfectShader.shader" />
+    <None Include="Assets\Shaders\BlackWhiteShader.shader" />
+    <None Include="Assets\Shaders\LitShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
