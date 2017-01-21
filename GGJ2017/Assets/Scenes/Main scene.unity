@@ -2070,6 +2070,22 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[0].Conditions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[1].Conditions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[2].Conditions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[3].Conditions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 436154, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.3692322
@@ -2100,6 +2116,66 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 436154, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[0].Conditions.Array.data[2]._inputName
+      value: Gamepad axis L Horizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[0].Conditions.Array.data[2]._inputType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[0].Conditions.Array.data[2]._axisConditionParameter
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[1].Conditions.Array.data[2]._inputName
+      value: Gamepad axis L Horizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[1].Conditions.Array.data[2]._inputType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[1].Conditions.Array.data[2]._axisCondition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[1].Conditions.Array.data[2]._axisConditionParameter
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[2].Conditions.Array.data[2]._inputName
+      value: Gamepad axis L Vertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[2].Conditions.Array.data[2]._inputType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[2].Conditions.Array.data[2]._axisConditionParameter
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[3].Conditions.Array.data[2]._inputName
+      value: Gamepad axis L Vertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[3].Conditions.Array.data[2]._axisCondition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[3].Conditions.Array.data[2]._axisConditionParameter
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[3].Conditions.Array.data[2]._inputType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401302, guid: ecab831e2ea945747a549aa43b78ddc6, type: 2}
+      propertyPath: _inputItems.Array.data[2].Conditions.Array.data[2]._axisCondition
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3140,7 +3216,7 @@ GameObject:
   - 212: {fileID: 1137627423}
   - 114: {fileID: 1137627422}
   - 95: {fileID: 1137627425}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: SimpleWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3492,7 +3568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1251565470
 Transform:
   m_ObjectHideFlags: 0
