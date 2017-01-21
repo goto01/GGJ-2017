@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Components.Movement.MainCharacterMovement;
+﻿using Assets.Scripts.Components.EnemyComponents;
+using Assets.Scripts.Components.Movement.MainCharacterMovement;
 using Assets.Scripts.Staff;
 using Assets.Scripts.Staff.Core;
 using Assets.Scripts.Staff.CustomEditor.CustomProperties;
@@ -16,7 +17,6 @@ namespace Assets.Scripts.Components.StageComponents.Fans
         [SerializeField] [Binding(true)] private Animator _animator;
         [SerializeField] private BaseSpawner _starSpawner;
         [SerializeField] private bool _active;
-        private bool _popUpSpawned;
 
         private bool Active
         {
@@ -35,11 +35,15 @@ namespace Assets.Scripts.Components.StageComponents.Fans
 
         protected virtual void OnTriggerEnter2D(Collider2D coll)
         {
-            if (_active && !_popUpSpawned && coll.tag.Equals(MainCharacterMovementObject.Tag))
+            Debug.Log(coll.tag);
+            if (_active && coll.tag.Equals(MainCharacterMovementObject.Tag))
             {
                 GoodPopupSpawner.Instance.Spawner.Spawn(transform.position + new Vector3(0, 0.03125f * 50));
-                _popUpSpawned = true;
-                Call(() => _popUpSpawned = false, 5);
+                //Active = true;
+            }
+            else if (coll.tag.Equals(DroneComponent.Tag))
+            {
+                Deactivate();
             }
         }
 
@@ -47,12 +51,14 @@ namespace Assets.Scripts.Components.StageComponents.Fans
         {
             if (Active) return;
             Active = true;
-            GoodPopupSpawner.Instance.Spawner.Spawn(transform.position+new Vector3(0, 0.03125f*50));
-            StarsSpawner.Instance.Spawner.Spawn(transform.position);
+            //GoodPopupSpawner.Instance.Spawner.Spawn(transform.position+new Vector3(0, 0.03125f*50));
+            //StarsSpawner.Instance.Spawner.Spawn(transform.position);
         }
 
         public void Deactivate()
         {
+            if (!_active) return;
+            BadPopupSpawner.Instance.Spawner.Spawn(transform.position + new Vector3(0, 0.03125f * 50));
             Active = false;
         }
 

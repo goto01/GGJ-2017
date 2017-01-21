@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0dce5c321a50eb34db7cceaca594332e
-timeCreated: 1485008451
+timeCreated: 1485039435
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,10 @@ TextureImporter:
     21300002: emoji 20x15_1
     21300004: emoji 20x15_2
     21300006: emoji 20x15_3
+    21300008: emoji 20x15_4
+    21300010: emoji 20x15_5
+    21300012: emoji 20x15_6
+    21300014: emoji 20x15_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,7 +62,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3
-        y: 0
+        y: 46
         width: 14
         height: 13
       alignment: 0
@@ -69,7 +73,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 23
-        y: 0
+        y: 46
         width: 14
         height: 13
       alignment: 0
@@ -80,7 +84,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 43
-        y: 0
+        y: 44
         width: 13
         height: 13
       alignment: 0
@@ -91,9 +95,53 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 63
-        y: 0
+        y: 44
         width: 13
         height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: emoji 20x15_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 30
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: emoji 20x15_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 30
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: emoji 20x15_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 16
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: emoji 20x15_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 16
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

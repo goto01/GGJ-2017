@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a831404fd99bdd44a3c197ff256b111, type: 3}
   m_Name: HierarchyTagsSettings
   m_EditorClassIdentifier: 
-  TagTitleRightMargin: 0.6
+  TagTitleRightMargin: 0.656
   Tags:
   - Name: Game controller
     Color: {r: 0.7941176, g: 0.2744377, b: 0.2744377, a: 1}
@@ -27,3 +27,5 @@ MonoBehaviour:
     Color: {r: 0.7370534, g: 0.78676474, b: 0.27189663, a: 1}
   - Name: Wave
     Color: {r: 0.8602941, g: 0.613025, b: 0.1707937, a: 1}
+  - Name: Enemies
+    Color: {r: 0.8161765, g: 0.8161765, b: 0.8161765, a: 1}

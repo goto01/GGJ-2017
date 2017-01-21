@@ -10,6 +10,7 @@ TagManager:
   - Fan
   - Crowd
   - Wave
+  - Enemies
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Fan
   - Twist
   - Location output
-  - 
+  - Enemies
   - 
   - 
   - 

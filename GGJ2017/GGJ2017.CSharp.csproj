@@ -77,13 +77,14 @@
     <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\RegisteredComponent.cs" />
     <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\SystemTime.cs" />
     <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\UnitySingleton.cs" />
+    <Compile Include="Assets\Scripts\Components\EnemyComponents\DroneComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Movement\BaseMovementObject.cs" />
     <Compile Include="Assets\Scripts\Components\Movement\MainCharacterMovement\DirectionDescription.cs" />
     <Compile Include="Assets\Scripts\Components\Movement\MainCharacterMovement\MainCharacterMovementObject.cs" />
     <Compile Include="Assets\Scripts\Components\Presenters\BaseCharacterPresenter.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\CharacterStageComponent.cs" />
-    <Compile Include="Assets\Scripts\Components\StageComponents\CrowdGenerator.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Crowd.cs" />
+    <Compile Include="Assets\Scripts\Components\StageComponents\CrowdGenerator.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Fans\SimpleFan.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\ReactableStageComponent.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\AnimatorParameterReaction.cs" />
@@ -111,11 +112,13 @@
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\Internal\PixelPerfectObject.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\PixelPerfectCamera.cs" />
     <Compile Include="Assets\Scripts\PixelPerfect\Scripts\PixelPerfectSprite.cs" />
+    <Compile Include="Assets\Scripts\Staff\BadPopupSpawner.cs" />
     <Compile Include="Assets\Scripts\Staff\Core\BindingMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Core\OWCTransform.cs" />
     <Compile Include="Assets\Scripts\Staff\CustomEditor\CustomProperties\BindingProperty.cs" />
     <Compile Include="Assets\Scripts\Staff\CustomEditor\EditorGUIExtended.cs" />
     <Compile Include="Assets\Scripts\Staff\DependentComponents\PositionDependentComponent.cs" />
+    <Compile Include="Assets\Scripts\Staff\GoodPopupSpawner.cs" />
     <Compile Include="Assets\Scripts\Staff\Helpers\FieldInfoExtended.cs" />
     <Compile Include="Assets\Scripts\Staff\Helpers\GameObjectExtended.cs" />
     <Compile Include="Assets\Scripts\Staff\Helpers\ObjectCreatorHelper.cs" />
@@ -124,7 +127,6 @@
     <Compile Include="Assets\Scripts\Staff\Helpers\Vector2Helper.cs" />
     <Compile Include="Assets\Scripts\Staff\Pool\PoolObject.cs" />
     <Compile Include="Assets\Scripts\Staff\Pool\PortablePool.cs" />
-    <Compile Include="Assets\Scripts\Staff\GoodPopupSpawner.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\ISingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Staff\Singleton\UnitySingleton.cs" />
@@ -141,11 +143,11 @@
     <None Include="Assets\Scripts\PixelPerfect\README.txt" />
     <None Include="Assets\Scripts\PixelPerfect\Scripts\Internal\Resources\PixelPerfectShader.shader" />
     <None Include="Assets\Shaders\BlackWhiteShader.shader" />
+    <None Include="Assets\Shaders\ColoredReplaceShader.shader" />
     <None Include="Assets\Shaders\LitShader.shader" />
     <None Include="Assets\Shaders\Location shader.shader" />
     <None Include="Assets\Shaders\Simple wave shader.shader" />
     <None Include="Assets\Shaders\Sprite simple shader.shader" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

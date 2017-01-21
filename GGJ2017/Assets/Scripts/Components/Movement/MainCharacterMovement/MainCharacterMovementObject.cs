@@ -36,8 +36,8 @@ namespace Assets.Scripts.Components.Movement.MainCharacterMovement
         protected override void UpdateZPosition()
         {
             var offsettedPos = _position;
-            offsettedPos.y += _yOffset;
-            //_position.z = ZPositionSortController.Instance.GetZCoord(offsettedPos);
+            offsettedPos.y += -4.2f;
+            _position.z = ZPositionSortController.Instance.GetZCoord(offsettedPos)-10;
         }
     }
 }
