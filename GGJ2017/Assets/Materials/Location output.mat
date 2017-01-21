@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SimpleWaveMaterial
-  m_Shader: {fileID: 4800000, guid: 21b0f4a71ea8e67439f7da7da021d1f4, type: 3}
+  m_Name: Location output
+  m_Shader: {fileID: 4800000, guid: dcef541b47567e942ab2f487d60a7cec, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -80,16 +80,23 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Graycale
+          name: _LocationTexture
         second:
-          m_Texture: {fileID: 2800000, guid: d071706f6bcaf6e4583a85001d3a8253, type: 3}
+          m_Texture: {fileID: 8400000, guid: 3bb2c399eddfae74ba54ce9c30e937c0, type: 2}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _RenderTexture
+          name: _TwistTexture
         second:
-          m_Texture: {fileID: 2800000, guid: 33ff4138f47430a438ddb81c2821dc1b, type: 3}
+          m_Texture: {fileID: 8400000, guid: 291cf124bc4da15488f4e8ed3bbd021b, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ChromoKeyTexture
+        second:
+          m_Texture: {fileID: 2800000, guid: 27577968092461f4fa00bb41f6f12a6b, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -140,18 +147,6 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 0
-      data:
-        first:
-          name: _GrayScaleDelta
-        second: 1
-      data:
-        first:
-          name: _GrayScaleDelta0
-        second: 1
-      data:
-        first:
-          name: _GrayScaleDelta1
         second: 0
     m_Colors:
       data:
