@@ -11,6 +11,7 @@ TagManager:
   - Crowd
   - Wave
   - Enemies
+  - Sound input
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Twist
   - Location output
   - Enemies
-  - 
+  - Sound input
   - 
   - 
   - 

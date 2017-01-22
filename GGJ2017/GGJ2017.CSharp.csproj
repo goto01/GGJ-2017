@@ -78,6 +78,8 @@
     <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\SystemTime.cs" />
     <Compile Include="Assets\AudioToolkit\Shared Auxiliary Code\UnitySingleton.cs" />
     <Compile Include="Assets\Scripts\Components\EnemyComponents\DroneComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\InpputOutputSoundSystem\InputSound.cs" />
+    <Compile Include="Assets\Scripts\Components\InpputOutputSoundSystem\OutputSound.cs" />
     <Compile Include="Assets\Scripts\Components\Movement\BaseMovementObject.cs" />
     <Compile Include="Assets\Scripts\Components\Movement\MainCharacterMovement\DirectionDescription.cs" />
     <Compile Include="Assets\Scripts\Components\Movement\MainCharacterMovement\MainCharacterMovementObject.cs" />
