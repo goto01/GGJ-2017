@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.5f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -88,11 +86,13 @@
     <Compile Include="Assets\Scripts\Components\StageComponents\Crowd.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\CrowdGenerator.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Fans\SimpleFan.cs" />
+    <Compile Include="Assets\Scripts\Components\StageComponents\Progress\LevelProgress.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\ReactableStageComponent.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\AnimatorParameterReaction.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\BaseReaction.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\OffsetObjectReaction.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\SlowdownReaction.cs" />
+    <Compile Include="Assets\Scripts\Components\StageComponents\ReactableStageComponents\Reactions\StopGameObjectReaction.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\Stage.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\StageAreas\AggregatorArea.cs" />
     <Compile Include="Assets\Scripts\Components\StageComponents\StageAreas\BaseStageArea.cs" />
@@ -148,6 +148,7 @@
     <None Include="Assets\Shaders\ColoredReplaceShader.shader" />
     <None Include="Assets\Shaders\LitShader.shader" />
     <None Include="Assets\Shaders\Location shader.shader" />
+    <None Include="Assets\Shaders\PartlyShader.shader" />
     <None Include="Assets\Shaders\Simple wave shader.shader" />
     <None Include="Assets\Shaders\Sprite simple shader.shader" />
   </ItemGroup>

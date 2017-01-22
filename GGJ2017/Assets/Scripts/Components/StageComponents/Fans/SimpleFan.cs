@@ -18,7 +18,7 @@ namespace Assets.Scripts.Components.StageComponents.Fans
         [SerializeField] private BaseSpawner _starSpawner;
         [SerializeField] private bool _active;
 
-        private bool Active
+        public bool Active
         {
             get { return _active; }
             set

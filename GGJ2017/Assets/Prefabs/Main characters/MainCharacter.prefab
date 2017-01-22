@@ -30,7 +30,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8125, y: 2.375, z: 0}
+  m_LocalPosition: {x: -0.8125, y: 2.375, z: -5}
   m_LocalScale: {x: 0.03125, y: 0.03125, z: 0.03125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -64,9 +64,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 1, y: 0.46}
+  m_Offset: {x: 1, y: 4.43}
   serializedVersion: 2
-  m_Radius: 3.88723
+  m_Radius: 32.291496
 --- !u!95 &9540110
 Animator:
   serializedVersion: 3
@@ -139,6 +139,7 @@ MonoBehaviour:
     InputName: Up
   - Direction: {x: 0, y: -1}
     InputName: Down
+  _yOffset: -0.6562585
 --- !u!114 &11494904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,6 +155,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 88e65f533a94aab40887b52b6f607c9d, type: 2}
   - {fileID: 11400000, guid: f9f5dd18d427b0e4fa560c979958c2c2, type: 2}
   - {fileID: 11400000, guid: 68a36bd62adcbaf4b9d6f55f365f2a8e, type: 2}
+  - {fileID: 11400000, guid: 044b4ef68d3bcce4182a3838450886d5, type: 2}
+  - {fileID: 11400000, guid: f1bad4d8b48d1dc49b85e4ff25b10501, type: 2}
   _targetGameObject: {fileID: 128876}
 --- !u!212 &21266930
 SpriteRenderer:

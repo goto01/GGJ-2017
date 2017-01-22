@@ -9,6 +9,7 @@ namespace Assets.Scripts.Staff.Spawners
         [SerializeField] protected PortablePool _pool;
         [SerializeField] private float _spawnDelay;
         [SerializeField] private bool _isSpawnDefault;
+        [SerializeField] private bool _setPosition = true;
 
         protected virtual Vector2 Position { get {return Vector2.zero;} }
 
@@ -33,7 +34,7 @@ namespace Assets.Scripts.Staff.Spawners
             while (true)
             {
                 var @object = _pool.PopObject();
-                @object.transform.position = Position;
+                if (@object != null && _setPosition) @object.transform.position = Position;
                 yield return new WaitForSeconds(_spawnDelay);
             }
         }

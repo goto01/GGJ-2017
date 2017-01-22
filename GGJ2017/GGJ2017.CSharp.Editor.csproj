@@ -126,6 +126,7 @@
     <None Include="Assets\Shaders\ColoredReplaceShader.shader" />
     <None Include="Assets\Shaders\LitShader.shader" />
     <None Include="Assets\Shaders\Location shader.shader" />
+    <None Include="Assets\Shaders\PartlyShader.shader" />
     <None Include="Assets\Shaders\Simple wave shader.shader" />
     <None Include="Assets\Shaders\Sprite simple shader.shader" />
   </ItemGroup>
