@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Crowd area slowdown reactoin
   m_EditorClassIdentifier: 
   _reactionName: Crowd area
-  _slowDownDelta: 0.3
+  _slowDownDelta: 0.5

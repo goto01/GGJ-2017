@@ -35,7 +35,6 @@ namespace Assets.Scripts.Components.StageComponents.Fans
 
         protected virtual void OnTriggerEnter2D(Collider2D coll)
         {
-            Debug.Log(coll.tag);
             if (_active && coll.tag.Equals(MainCharacterMovementObject.Tag))
             {
                 GoodPopupSpawner.Instance.Spawner.Spawn(transform.position + new Vector3(0, 0.03125f * 50));

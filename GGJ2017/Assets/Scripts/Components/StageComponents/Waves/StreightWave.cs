@@ -7,7 +7,7 @@ namespace Assets.Scripts.Components.StageComponents.Waves
     class StreightWave : BaseWave
     {
         [SerializeField] private float _delay;
-        [SerializeField] private bool _isGamePad;
+        [SerializeField] private bool _isGamePad = true;
 
         private bool _active = true;
         private bool IsButtonPressed { get { return InputController.Instance.IsFire(); } }

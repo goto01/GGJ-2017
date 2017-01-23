@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11466512}
   - 58: {fileID: 5885438}
   - 50: {fileID: 5087102}
+  - 114: {fileID: 11444012}
   m_Layer: 15
   m_Name: Drone
   m_TagString: Enemies
@@ -124,7 +125,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: -0.04, y: -1.35}
   serializedVersion: 2
-  m_Radius: 0.47055435
+  m_Radius: 1.0104241
 --- !u!95 &9542094
 Animator:
   serializedVersion: 3
@@ -160,6 +161,17 @@ MonoBehaviour:
   runContinously: 1
   useParentTransform: 1
   displayGrid: 0
+--- !u!114 &11444012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d375773475a9447a7b2ef92fb3b3a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11466512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,6 +184,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _path:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
